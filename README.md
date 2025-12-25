@@ -30,20 +30,6 @@ Database Connector: mysql-connector-python
 
 Version Control: Git & GitHub
 
-📂 Project Structure
-Student_Attendance_Tracker/
-│
-├── main.py            # Entry point of the application
-├── login.py           # Login GUI
-├── dashboard.py       # Dashboard screen
-├── student.py         # Add student functionality
-├── attendance.py      # Attendance marking
-├── database.py        # MySQL connection
-├── test_db.py         # Database connection test
-├── README.md
-├── .gitignore
-└── venv/              # Virtual environment (ignored in Git)
-
 ⚙️ Prerequisites
 
 Ensure the following are installed:
@@ -55,6 +41,9 @@ MySQL Server 8.0
 Git
 
 MySQL Workbench (optional)
+
+
+)
 
 🗄️ Database Setup
 1️⃣ Create Database
@@ -85,24 +74,8 @@ CREATE TABLE attendance (
 INSERT INTO users (username, password)
 VALUES ('admin', 'admin123');
 
-🧪 Setup & Installation
-1️⃣ Clone Repository
-git clone https://github.com/MadhuVarshitha-03/Student-Attendance-Tracker.git
-cd Student_Attendance_Tracker
 
-2️⃣ Create Virtual Environment
-python -m venv venv
-
-3️⃣ Activate Virtual Environment
-
-Windows
-
-venv\Scripts\activate
-
-4️⃣ Install Dependencies
-pip install mysql-connector-python
-
-🔌 Configure Database Connection
+Configure Database Connection
 
 Edit database.py:
 
@@ -136,32 +109,3 @@ Marking attendance
 Attendance is stored in MySQL
 
 Foreign key constraints ensure valid student data
-
-📌 Common Issues & Fixes
-
-Foreign key error: Add student before marking attendance
-
-Module not found: Activate virtual environment
-
-Access denied: Check MySQL username/password
-
-📈 Future Enhancements
-
-🔐 Password hashing
-
-📊 View attendance history
-
-📤 Export attendance to Excel
-
-🗓️ Prevent duplicate attendance per day
-
-🎨 Improved UI design
-
-🎯 Resume Description
-
-Developed a desktop-based Student Attendance Tracker using Python, Tkinter, and MySQL. Implemented secure authentication, student management, and attendance tracking with relational database integration.
-
-🤝 Contribution
-
-Contributions are welcome!
-Feel free to fork the repository and submit a pull request.
